@@ -1,0 +1,106 @@
+.mobile-catalog {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+
+    &__active {
+        display: block;
+    }
+
+    .container {
+        position: relative;
+        max-width: 100%;
+        padding: 48px 10px 0;
+    }
+
+    &__close {
+        position: absolute;
+        background-color: transparent;
+        width: 18px;
+        height: 18px;
+        top: 18px;
+        right: 10px;
+
+        &::before,
+        &::after {
+            background-color: var(--l-grey);
+            width: 2px;
+            height: 18px;
+            position: absolute;
+            content: '';
+            display: block;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        &::before {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 450px;
+        overflow-y: scroll;
+
+        li {
+            position: relative;
+            padding: 8px 10px;
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+
+            &::after,
+            &::before {
+                position: absolute;
+                content: '';
+                display: block;
+            }
+
+            &::after {
+                height: 2px;
+                width: 100%;
+                left: 0;
+                bottom: 0;
+                background-color: #e8e8e8;
+            }
+
+            &::before {
+                width: 15px;
+                height: 8px;
+                top: 50%;
+                right: 10px;
+                transform: translateY(-50%);
+                background-image: url(/img/icons/general/list-active.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+
+            &:first-child {
+                padding-top: 0;
+            }
+
+            &:last-child {
+                padding-bottom: 0;
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            img {
+                max-width: 32px;
+            }
+        }
+    }
+}

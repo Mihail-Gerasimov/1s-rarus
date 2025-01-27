@@ -1,0 +1,14 @@
+.hover {
+    transition: .3s;
+
+    &:hover {
+        color: var(--red);
+        transition: .3s;
+        border-color: var(--red);
+
+        svg path {
+            fill: var(--red);
+            transition: .3s;
+        }
+    }
+}

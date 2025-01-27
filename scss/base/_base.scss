@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%
+}
+
+body {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    color: var(--grey);
+    background-color: var(--white);
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: #e11c4b;
+        -webkit-box-shadow: 0 0 1px #e11c4b;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+
+    li {
+        list-style: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    display: block;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+
+    &:focus {
+        border: none;
+    }
+}
+
+input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+
+    &:focus {
+        border: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    width: 100%;
+
+    @media (max-width: 1150px) {
+        max-width: 991px;
+    }
+
+    @media (max-width: 991px) {
+        max-width: 768px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 575px;
+    }
+
+    @media (max-width: 575px) {
+        max-width: 425px;
+    }
+
+    @media (max-width: 425px) {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}

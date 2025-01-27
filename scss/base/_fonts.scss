@@ -2,16 +2,17 @@
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
         url('../fonts/Roboto-Bold.woff') format('woff'),
-        url('../fonts/Roboto-Bold.ttf') format('ttf');
+        url('../fonts/Roboto-Bold.ttf') format('truetype');
     font-style: normal;
     font-weight: 700;
 }
+
 
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
         url('../fonts/Roboto-Regular.woff') format('woff'),
-        url('../fonts/Roboto-Regular.ttf') format('ttf');
+        url('../fonts/Roboto-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: 400;
 }
@@ -20,7 +21,7 @@
     font-family: 'Rosario';
     src: url('../fonts/Rosario-Bold.woff2') format('woff2'),
         url('../fonts/Rosario-Bold.woff') format('woff'),
-        url('../fonts/Rosario-Bold.ttf') format('ttf');
+        url('../fonts/Rosario-Bold.ttf') format('truetype');
     font-style: normal;
     font-weight: 700;
 }
